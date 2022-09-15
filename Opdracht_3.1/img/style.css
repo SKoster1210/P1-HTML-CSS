@@ -1,0 +1,70 @@
+.GroteHackerimg{
+  height: 100%;
+  width: 100%;
+}
+nav {
+  display: flex;
+  width: 100%;
+  min-height: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: auto;
+  background: #00a8c7;
+  justify-content: space-between;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+nav li {
+  font-size: 30px;
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 40px;
+}
+nav a {
+    text-decoration: none;
+    color: #fff
+}
+.FirstyearText{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    color: #fff;
+    transform: translate(-50%, -50%);
+}
+
+section {
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: black
+}
+body p{
+    color: #fff;
+    font-family: "Goldman", cursive;
+}
+body h2{
+    color: #fff;
+    font-weight: bold;
+
+}
+footer p {
+    color: #fff;
+    padding-left: 650px;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    min-height: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+    background: #00a8c7;
+    justify-content: space-between;
+}
