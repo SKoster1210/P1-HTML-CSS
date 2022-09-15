@@ -24,3 +24,23 @@ p:first-of-type{
     color: #8A2BE2;
     text-decoration:none; 
  }
+
+
+
+
+
+
+ header{
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url("https://i.ytimg.com/vi/IyQjEYs2ik4/maxresdefault.jpg");
+}
+
+header p{
+
+    color: #8A2BE2;
+
+}
