@@ -40,7 +40,17 @@ p:first-of-type{
 }
 
 header p{
+    color: #00ccff;
+}
 
-    color: #8A2BE2;
+header h1{
+    color: #7d7d7d;
+}
+section article img{
+    width: 50%;
+}
 
+section article{
+    border-style: solid;
+    color: rgb(38, 38, 38);
 }
