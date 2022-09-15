@@ -53,4 +53,5 @@ section article img{
 section article{
     border-style: solid;
     color: rgb(38, 38, 38);
+    border-left-width: thick;
 }
