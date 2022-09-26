@@ -49,33 +49,7 @@
     
 } */
 
-/* Tablet */
-@media (min-device-width: 800px) and (max-device-width: 1280px) and (-webkit-min-device-pixel-ratio: 2) { 
-    .logo {
-        background-color: rgb(104, 109, 224);
-        display: table-cell;
-        vertical-align: middle;
-        text-align: center;
-    }
-
-    .explain1 {
-        color: white;
-        background-color: rgb(254, 70, 87)
-    }
-    .explain2 {
-        color: white;
-        background-color: rgb(83, 82, 236)
-    }
-    .explain3 {
-        color: white;
-        background-color: rgb(55, 66, 249)
-    }
-
-}
-
-@media screen and (min-device-width: 360px)
-and (max-device-height: 700px)
-and (-webkit-device-pixel-ratio: 2) {
+@media  (max-device-height: 700px) {
     .logo-text {
         font-size: 4rem;
         display: table-cell;
@@ -99,4 +73,28 @@ and (-webkit-device-pixel-ratio: 2) {
         color: white;
         background-color: rgb(48, 51, 106);
     }
+}
+
+/* Tablet */
+@media (max-device-width: 1280px) { 
+    .logo {
+        background-color: rgb(104, 109, 224);
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    .explain1 {
+        color: white;
+        background-color: rgb(254, 70, 87)
+    }
+    .explain2 {
+        color: white;
+        background-color: rgb(83, 82, 236)
+    }
+    .explain3 {
+        color: white;
+        background-color: rgb(55, 66, 249)
+    }
+
 }
