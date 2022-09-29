@@ -20,7 +20,6 @@
     font-size: 1.5rem;
 }
 
-
 .logo-text {
     background-color: rgb(255, 85, 85);
     color: white;
@@ -49,19 +48,15 @@
     
 } */
 
-@media  (max-device-height: 700px) {
+@media  (max-device-height: 900px) and (max-device-width: 500px) {
     .logo-text {
         font-size: 4rem;
         display: table-cell;
         vertical-align: middle;
         background-color: blueviolet;
-    }
+    }   
 
     .explain1 {
-        display:  cell;
-        vertical-align: middle;
-        text-align: center;
-        font-size: 1rem;
         color: white;
         background-color: rgb(126, 214, 223);
     }
@@ -81,7 +76,7 @@
         background-color: rgb(104, 109, 224);
         display: table-cell;
         vertical-align: middle;
-        text-align: center;
+        font-size: 4rem;
     }
 
     .explain1 {
