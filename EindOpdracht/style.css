@@ -12,22 +12,17 @@ body {
     color: #fff;
 }
 
-::-webkit-scrollbar {
-    display: none;
-}
+::-webkit-scrollbar {display: none;}
 
-
-
-/* Home -> Nav */
-
+/* Home */
 #home {
     height: 100vh;
     background-image: url(./img/landing-page.jpg);
+    background-blend-mode: multiply;
+    background-color: #acacac;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-blend-mode: multiply;
-    background-color: #acacac;
 }
 
 #home nav {
@@ -66,15 +61,14 @@ body {
     font-size: 1.5rem;
 }
 
-/* Home -> Content */
-
+/* Home */
 #home .home-content {
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    height: 100vh;
 }
 
 #home .home-content h1 {
@@ -101,10 +95,11 @@ body {
     transition: 0.5s ease;
 }
 
-
-/* Locations -> Content */
-
+/* Locations */
 #locaties {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     height: 100vh;
     background-image: url(./img/new-york-page.png);
     background-repeat: no-repeat;
@@ -112,9 +107,6 @@ body {
     background-size: cover;
     background-blend-mode: multiply;
     background-color: #acacac;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
 }
 
 #locaties h2 {
@@ -131,21 +123,20 @@ body {
     font-size: 2.5rem;
 }
 
-/* Benefits -> Title */
-
+/* Benefits */
 #benefits {
     height: 110vh;
 }
 
 #benefits .title {
+    height: 40vh;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
     justify-content: center;
     background-color: #131c27;
-    height: 40vh;
-    width: 100vw;
 }
 
 #benefits .title h2 {
@@ -157,8 +148,7 @@ body {
     font-size: 2.4rem;
 }
 
-/* Benefits -> Cards */
-
+/* Benefits */
 #benefits .card-container {
     display: flex;
     justify-content: center;
@@ -166,11 +156,11 @@ body {
 
 #benefits .card {
     background-color: #fff;
+    box-shadow: 2.5px 5px 12px rgb(192, 192, 193);
     width: 21vw;
     height: 52.5vh;
     margin: 3vw;
     margin-top: 8vh;
-    box-shadow: 2.5px 5px 12px rgb(195, 195, 195);
 }
 
 #benefits .card-bar {
@@ -202,9 +192,11 @@ body {
     margin-top: 10vh;
 }
 
-/* Contact -> Content */
-
+/* Contact */
 #contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
     background-image: url(./img/contact-mountain.png);
     background-repeat: no-repeat;
@@ -212,9 +204,6 @@ body {
     background-size: cover;
     background-blend-mode: multiply;
     background-color: #acacac;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 #contact .form-wrapper {
@@ -258,12 +247,12 @@ body {
     width: 100%;
     height: 6vh;
     color: #fff;
-    font-size: 1.2rem;
-    border-bottom-left-radius: 1vw;
-    border-bottom-right-radius: 1vw;
     cursor: pointer;
     position: relative;
     bottom: -10vh;
+    font-size: 1.2rem;
+    border-bottom-left-radius: 1vw;
+    border-bottom-right-radius: 1vw;
 }
 
 #contact .form-wrapper button:hover {
@@ -271,8 +260,7 @@ body {
     transition: 0.2s ease;
 }
 
-/* Footer -> Content */
-
+/* Footer */
 #footer {
     height: 10vh;
     background-color: #131c27;
@@ -281,17 +269,17 @@ body {
 }
 
 #footer h1 {
-    font-size: 1.5rem;
     margin-left: 5vw;
+    font-size: 1.5rem;
 }
 
 #footer ul {
+    list-style-type: none;
+    margin-left: 40vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 40vw;
-    list-style-type: none;
-    margin-left: 40vw;
 }
 
 #footer ul li {
@@ -300,12 +288,10 @@ body {
 
 
 
-/* Responsive */
-
+/* Mobile */
 @media screen and (max-width: 600px) {
     
-    /* Home Responsive */
-
+    /* Home */
     #home nav {
         height: 18vh;
         z-index: 1;
@@ -339,8 +325,7 @@ body {
         font-size: 1.1rem;
     }
 
-    /* Locations Responsive */
-
+    /* Locations */
     #locaties h2 {
         font-size: 2.5rem;
         margin-left: 4vw;
@@ -353,8 +338,7 @@ body {
         width: 70%;
     }
 
-    /* Benefits Responsive */
-
+    /* Benefits */
     #benefits {
         height: 200vh;
     }
@@ -381,17 +365,15 @@ body {
     #benefits .card {
         width: 60vw;
         height: 52.5vh;
+        box-shadow: 2.5px 5px 12px rgb(192, 192, 193);
         margin-top: 2vh;
-        box-shadow: 2.5px 5px 12px rgb(195, 195, 195);
     }
     
     #benefits .card-bar .icon {
         width: 7.8vw;
     }
 
-
-    /* Contact Responsive */
-
+    /* Contact */
     #contact .form-wrapper {
         height: 45vh;
         width: 85vw;
@@ -403,36 +385,32 @@ body {
     }
 
     #contact .form-wrapper .contact-content input {
-        width: 30vw;
-        height: 4vh;
         font-size: 1.2rem;
         margin-left: 4vw;
+        width: 30vw;
+        height: 4vh;
     }
-
     #contact .form-wrapper button {
         height: 8vh;
         border-bottom-left-radius: 4vw;
         border-bottom-right-radius: 4vw;
         bottom: -10vh;
     }
-
-    /* Footer Responsive */
-
+    /* Footer  */
     #footer {
         height: 15vh;
-        flex-direction: column;
         align-items: center;
+        flex-direction: column;
     }
 
     #footer h1 {
         font-size: 1.8rem;
         margin-top: 2vh;
     }
-
     #footer ul {
         display: flex;
         width: 70vw;
-        margin-left: 0vw;
         margin-top: 2.5vh;
+        margin-left: 0vw;
     }
 }
