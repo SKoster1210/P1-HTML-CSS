@@ -97,6 +97,8 @@
         display: table-cell;
         vertical-align: middle;
         background-color: rgb(104, 109, 224);
+        display: flex;
+        justify-content: space-between;
     }  
 
     .logo {
@@ -127,7 +129,10 @@
         width: 25px;
         height: 25px;
         display: block;
-        margin-left: 800px;
-        margin-top: -75px
+        margin-top: 50px;
+        margin-right: 50px;
     }
+
+
+
 }
