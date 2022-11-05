@@ -4,7 +4,6 @@
 }
 
 .logo-text {
-    width: 100vw;
     font-size: 1.5rem;
 }
 .explain1 {
@@ -24,19 +23,30 @@
     background-color: rgb(255, 85, 85);
     color: white;
     height: 10vh;
+    padding-left: 25px;
+    width: 100vw;
 }
 
 .explain1 {
     height: 30vh;
     background-color: rgb(249,202,34);
+    padding-left: 25px;
 }
 .explain2 {
     height: 30vh;
-    background-color: rgb(240, 146, 43)
+    background-color: rgb(240, 146, 43);
+    padding-left: 25px;
 }
 .explain3 {
     height: 30vh;
     background-color: rgb(105, 176, 76);
+    padding-left: 25px;
+}
+.square {
+    background-color: white;
+    width: 25px;
+    height: 25px;
+    display: none
 }
 
 /* @media (min-device-width: 800px) and (max-device-width: 1280px) and (-webkit-min-device-pixel-ratio: 2) {
@@ -48,48 +58,76 @@
     
 } */
 
-@media  (max-device-height: 900px) and (max-device-width: 500px) {
-    .logo-text {
-        font-size: 4rem;
+/* Tablet (Werkt met google met de Resolution: 768x1024 | "iPad Mini") */
+@media (max-device-width: 800px) { 
+    .logo {
+        background-color: rgb(136, 138, 189);
         display: table-cell;
         vertical-align: middle;
-        background-color: blueviolet;
-    }   
+    }
+    .logo-text {
+        font-size: 2rem;
+        text-align: center;
+        width: 100vw;
+    }
+
+    .explain1 {
+        color: white;
+        background-color: rgb(254, 70, 87);
+        padding-left: 25px;
+    }
+    .explain2 {
+        color: white;
+        background-color: rgb(83, 82, 236);
+        padding-left: 25px;
+    }
+    .explain3 {
+        color: white;
+        background-color: rgb(55, 66, 249);
+        padding-left: 25px;
+        height: 33vh;
+    }
+
+}
+
+/* iPhone (Werkt met google met de Resolution: 375x667 | "iPhone SE") */
+@media  (max-device-height: 700px) and (max-device-width: 500px) {
+    .logo-text {
+        font-size: 3rem;
+        display: table-cell;
+        vertical-align: middle;
+        background-color: rgb(104, 109, 224);
+    }  
+
+    .logo {
+        width: 100vw
+    }
 
     .explain1 {
         color: white;
         background-color: rgb(126, 214, 223);
+        padding-top: 45px;
+        text-align: center;
     }
     .explain2 {
         color: white;
-        background-color: rgb(224, 86, 253)
+        background-color: rgb(224, 86, 253);
+        padding-top: 45px;
+        text-align: center;
+        
     }
     .explain3 {
         color: white;
         background-color: rgb(48, 51, 106);
+        padding-top: 45px;
+        text-align: center;
     }
-}
-
-/* Tablet */
-@media (max-device-width: 1280px) { 
-    .logo {
-        background-color: rgb(104, 109, 224);
-        display: table-cell;
-        vertical-align: middle;
-        font-size: 4rem;
+    .square {
+        background-color: white;
+        width: 25px;
+        height: 25px;
+        display: block;
+        margin-left: 800px;
+        margin-top: -75px
     }
-
-    .explain1 {
-        color: white;
-        background-color: rgb(254, 70, 87)
-    }
-    .explain2 {
-        color: white;
-        background-color: rgb(83, 82, 236)
-    }
-    .explain3 {
-        color: white;
-        background-color: rgb(55, 66, 249)
-    }
-
 }
